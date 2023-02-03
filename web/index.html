@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="KaririnO3O">
+  <meta property="og:site_name" content="KaririnO3O">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="歌燐かりん">
+  <meta property="og:description" content="因為歌燐是初來人界所以不是很會說話，希望大家多多見諒也希望大家可以多多教導歌燐呢！🎤">
+  <meta property="og:image" content="https://website.karirino3o.repl.co/img/karin_8.jpg">
+  <title>歌燐かりん</title>
+  <link rel="icon" href="./img/home-img-01.png">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/slick.css" type="text/css" />
+  <link rel="stylesheet" href="./css/templatemo-style.css">
+  <!--
+    
+TemplateMo 560 Astro Motion
+
+https://templatemo.com/tm-560-astro-motion
+
+-->
+</head>
+
+<body>
+	<!-- Preloader, https://ihatetomatoes.net/create-custom-preloading-screen/ -->
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+  <div class="page-container">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="cd-slider-nav">
+            <nav class="navbar navbar-expand-lg" id="tm-nav">
+              <a class="navbar-brand" href="#" class="mb-4">歌燐かりん</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbar-supported-content" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbar-supported-content">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item selected">
+                    <a class="nav-link" aria-current="page" href="#0" data-no="1">Home</a>
+                    <div class="circle"></div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#0" data-no="2">Videos</a>
+                    <div class="circle"></div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#0" data-no="3">About</a>
+                    <div class="circle"></div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#0" data-no="4">Contact</a>
+                    <div class="circle"></div>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid tm-content-container">
+      <ul class="cd-hero-slider mb-0 py-5">
+        <li class="px-3" data-page-no="1">
+          <div class="page-width-1 page-left">
+            <div class="d-flex position-relative tm-border-top tm-border-bottom intro-container">
+              <div class="intro-left tm-bg-dark">
+                <h2 class="mb-4">歌燐かりん</h2>
+                <img src="./img/home-img-02.png" alt="Image" class="img-fluid intro-img-2" id="toFeed">
+								<script type="text/javascript">
+									// 3秒後消失
+									let num = 0;
+									let toFeed = document.getElementById('toFeed');
+									let old = Date.now()
+									toFeed.onclick = (e) => {
+										if(Date.now() - old < 500) {
+											old = Date.now();
+											toFeed.src = "https://cdn.discordapp.com/attachments/936255763297497138/963788931193798686/Webp.net-gifmaker.gif";
+											setTimeout(() => {
+												toFeed.src = "./img/home-img-02.png"
+											}, 3000)
+											return;
+										}
+										old = Date.now();
+										num++;
+										let n = num;
+										let love = document.createElement("img");
+										love.id = "love";
+										love.className = "love" + n;
+										love.src = "https://cdn.discordapp.com/emojis/960496003205726219.webp?size=56&quality=lossless";
+										love.style.width = (toFeed.clientWidth / 5) + "px";
+										love.style.top = e.pageY + "px";
+										love.style.left = e.pageX + "px";
+										document.body.appendChild(love);
+										let shake = setInterval(()=> {
+											let l = document.querySelector(".love" + n);
+											let t = l.style.top;
+											let le = l.style.left;
+											l.style.top = (Number(t.replace("px", "")) - (toFeed.clientHeight / 10)) + "px";
+											l.style.left = Number(le.replace("px", "")) + (toFeed.clientWidth / 10) + "px";
+										}, 500)
+										setTimeout(()=> {
+											clearInterval(shake);
+											document.body.removeChild(love);
+										}, 3000);
+									}
+								</script>
+                <p class="mb-4">
+                  因為歌燐是初來人界所以不是很會說話，希望大家多多見諒也希望大家可以多多教導歌燐呢！🎤 <br>
+                  かりんは初めて人間界着いたからそんな喋れないです、みんなから教えてくださいね😖
+                </p>
+                <p class="mb-0">
+                  <script type="text/javascript" src="https://apis.google.com/js/platform.js"></script>
+                		<div class="g-ytsubscribe" data-channelid="UCr6Zz5TL7EpRzGssPCe7zGA" data-layout="full"
+                  data-theme="dark" data-count="default"></div>
+                </p>
+                <div style="text-align: center; width: 100%; font-weight:bold;">
+					<!--
+                  <p class="mb-4">
+										<span class="highlight">瀏覽次數</span>
+										<a href="https://www.mfwzjsq.com/" target="_blank" style="text-align: center;"><img
+                      src="https://www.mfwzjsq.com/hit.php?id=zuuencxf&nd=9&style=109" border="0" alt="網頁計數器" style="text-align: center; width: 100%"></a>
+									</p>-->
+                  <a class="e fingies" title="🍫" target="_blank" rel="nofollow"
+                    href="https://www.youtube.com/karirin030">
+                    <span class="fl highlight">👉　歌燐</span><span class="highlight">かりん　👈</span>
+                  </a>
+                </div>
+              </div>
+              <div class="intro-right">
+								<div id="shadowbox" >
+									<img src="./img/home-img-01.png" alt="Image" class="img-fluid intro-img-2" id="shadow"  style="width: 100%;height: 100%;">
+								</div>
+								<script type="text/javascript">
+									let shadow = document.getElementById('shadow');
+									shadow.onmouseover = () => {
+										shadow.src = "https://cdn.discordapp.com/attachments/949122681138196531/962646560955576320/Karin_design_FSB_for_web.png";
+										setTimeout(()=>{
+											shadow.src = "./img/home-img-01.png";
+										}, 10000);
+									}
+									
+									shadow.onmouseleave = () => {
+										shadow.src = "./img/home-img-01.png";
+									}
+								</script>
+                <div id="click">
+                </div>
+              </div>
+              <div class="circle intro-circle-1"></div>
+              <div class="circle intro-circle-2"></div>
+              <div class="circle intro-circle-3"></div>
+              <div class="circle intro-circle-4"></div>
+            </div>
+            <div class="text-center">
+              <a href="#0" data-page-no="3" class="btn btn-primary tm-intro-btn tm-page-link">
+                About Karin
+              </a>
+            </div>
+          </div>
+        </li>
+        <li data-page-no="2">
+          <!-- Image Carousel -->
+          <div class="mx-auto position-relative gallery-container">
+            <div class="circle intro-circle-1"></div>
+            <div class="circle intro-circle-2"></div>
+            <div class="mx-auto tm-border-top gallery-slider" id="YTvideos">
+              <div id="loading" style="text-align: center;">
+                <img src="img/karin_7.png" alt="Loading">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li data-page-no="3">
+          <div class="mx-auto page-width-2">
+            <div class="row">
+              <div class="col-md-6 me-0 ms-auto">
+                <h2 class="mb-4">About Karin</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 tm-contact-left">
+                <img
+                  src="https://media.discordapp.net/attachments/949122681138196531/962646956281331722/KARIN_CGv1_twitter.jpg"
+                  class="img-fluid intro-img-2">
+                <!--style="transform: scale(0.8);"-->
+              </div>
+              <div class="col-md-6 tm-contact-right">
+                <p class="mb-4">
+                  illustration：Reita<br>
+                  Live 2D modeling：歌燐かりん<br>
+                  <br>
+                  🎤【配信タグ】<a rel="nofollow" href="https://www.youtube.com/hashtag/歌燐配信" target="_blank">#歌燐配信</a><br>
+                  🎤【Fanart】<a rel="nofollow" href="https://www.youtube.com/hashtag/歌燐Art"
+                    target="_blank">#歌燐Art</a><br>
+                  🎤【Special Tag】<a rel="nofollow" href="https://www.youtube.com/hashtag/歌燐勝手Cover"
+                    target="_blank">#歌燐勝手Cover</a><br>
+                  🎤【Fan name】<a rel="nofollow" href="https://www.youtube.com/hashtag/燐火" target="_blank">#燐火</a><br>
+                  🎤【Fan Mark】🎤🔥｜Mic Fire マイクファイヤー<br>
+                </p>
+                <p class="mb-4">
+                  <img src="img/karin_8.jpg" height="100%" width="100%">
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li data-page-no="4" class="px-3">
+				  <!--div class="position-relative page-width-1 page-left tm-border-top tm-border-bottom">
+				</div-->
+          <div class="position-relative page-width-1 page-right tm-border-top tm-border-bottom">
+            <div class="circle intro-circle-1"></div>
+            <div class="circle intro-circle-2"></div>
+            <div class="circle intro-circle-3"></div>
+            <div class="circle intro-circle-4"></div>
+            <div class="tm-bg-dark content-pad">
+              <h2 class="mb-4">Contact</h2>
+              <p class="mb-4">
+                ★☆★☆★☆★<br>
+                <span class="highlight">Discord</span>：<a rel="nofollow" href="https://discord.gg/DNVzX5wGp3"
+                  target="_blank">https://discord.gg/DNVzX5wGp3</a><br>
+                <span class="highlight">台詞收集セリフ募集(※長期開放)</span>：<a rel="nofollow"
+                  href="https://forms.gle/itQ1Gg8cGTxmq11XA" target="_blank">https://forms.gle/itQ1Gg8cGTxmq11XA</a><br>
+                <span class="highlight">Line</span>：<a rel="nofollow" href="https://lin.ee/mkrAPTj"
+                  target="_blank">https://lin.ee/mkrAPTj</a><br>
+                <span class="highlight">Twitter</span>：<a rel="nofollow" href="https://twitter.com/KaririnO3O"
+                  target="_blank">https://twitter.com/KaririnO3O</a><br>
+                <span class="highlight">Youtube</span>：<a rel="nofollow" href="https://www.youtube.com/karirin030"
+                  target="_blank">https://www.youtube.com/karirin030</a><br>
+                <span class="highlight">マシュマロ</span>：<a rel="nofollow" href="https://t.co/3jP8oJNBuA"
+                  target="_blank">https://t.co/3jP8oJNBuA</a><br>
+                ★☆★☆★☆★
+              </p>
+              <p>
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="container-fluid">
+      <marquee id="marquee" onMouseOver="this.stop()" onMouseOut="this.start()"></marquee>
+      <footer class="row mx-auto tm-footer">
+        <div class="col-md-6 px-0">
+          Copyright 2022 KaririnO3O. All rights reserved.
+        </div>
+        <div class="col-md-6 px-0 tm-footer-right">
+          Designed by <a rel="sponsored" href="https://discord.com/invite/KvmYAw7nYw" target="_blank"
+            class="tm-link-white">櫻2</a> && <a rel="sponsored" href="https://templatemo.com" target="_blank"
+            class="tm-link-white">TemplateMo</a>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"></script>
+	<script type="text/javascript" src="./js/slick.js"></script>
+  <script type="text/javascript" src="./js/YTvideos.js"></script>
+  <script type="text/javascript" src="./js/img.js"></script>
+  <script type="text/javascript" src="./js/count.js"></script>
+  <script type="text/javascript" src="./js/templatemo-script.js"></script>
+</body>
+
+</html>
